@@ -4,7 +4,7 @@
 
 ## 2. Iris dataset notebook
 
-## 3. MNIST dataset noteboo
+## 3. MNIST dataset notebook
 
 ## 4. Digit recognition script
 
