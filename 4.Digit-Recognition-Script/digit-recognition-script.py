@@ -6,7 +6,7 @@ import PIL
 # from PIL import Image
 
 from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets("MNIST_data/", one_hot=True) # y labels are oh-encoded
+mnist = input_data.read_data_sets("data/MNIST_data/", one_hot=True) # y labels are oh-encoded
 
 # Find out size of the dataset
 n_train = mnist.train.num_examples           # 55,000
@@ -86,16 +86,17 @@ for i in range(n_iterations):
 test_accuracy = sess.run(accuracy, feed_dict={X: mnist.test.images, Y: mnist.test.labels, keep_prob:1.0})
 print("\nAccuracy on test set:", test_accuracy)
 
-# Resize the image from the non-resized
-# folder to a 28x28 pixel image and
-# save it to a new folder
-# _nonresized_img = PIL.Image.open("numbers/non_resized/number9.png")
-# _nonresized_img = _nonresized_img.resize((28, 28), PIL.Image.ANTIALIAS)
-# _nonresized_img.save("numbers/resized/resizenumber9.png")
+''' 
+# Resize the image from the non-resized folder to a 28x28 pixel image and save it to a new folder
+_nonresized_img = PIL.Image.open("numbers/non_resized/number9.png") 
+_nonresized_img = _nonresized_img.resize((28, 28), PIL.Image.ANTIALIAS)
+_nonresized_img.save("numbers/resized/resizenumber9.png") 
+
+'''
 
 # Load the test image of the handwritten digit
 # saved as a 28x28 pixel image
-_resized_img = np.invert(PIL.Image.open("numbers/resized/resizenumber6.png").convert('L')).ravel()
+_resized_img = np.invert(PIL.Image.open("data/numbers/resized/resizenumber5.png").convert('L')).ravel()
 
 # Feeding the image loaded for testing
 prediction = sess.run(tf.argmax(output_layer,1), feed_dict={X: [_resized_img]})
