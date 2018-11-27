@@ -6,7 +6,7 @@ import PIL
 # from PIL import Image
 
 from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets("data/MNIST_data/", one_hot=True) # y labels are oh-encoded
+mnist = input_data.read_data_sets(".data/MNIST_data/", one_hot=True) # y labels are oh-encoded
 
 # Find out size of the dataset
 n_train = mnist.train.num_examples           # 55,000
@@ -96,7 +96,7 @@ _nonresized_img.save("numbers/resized/resizenumber9.png")
 
 # Load the test image of the handwritten digit
 # saved as a 28x28 pixel image
-_resized_img = np.invert(PIL.Image.open("data/numbers/resized/resizenumber5.png").convert('L')).ravel()
+_resized_img = np.invert(PIL.Image.open(".data/numbers/resized/resizenumber5.png").convert('L')).ravel()
 
 # Feeding the image loaded for testing
 prediction = sess.run(tf.argmax(output_layer,1), feed_dict={X: [_resized_img]})
