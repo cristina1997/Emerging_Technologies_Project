@@ -1,12 +1,11 @@
-/.data
+# Ignore specific files and folders
+# - https://stackoverflow.com/questions/36918540/gitignore-all-folders-beginning-with-a-period/36918678
+
+# Ignore all . files
+.*
+
+# Dont ignore .gitignore (this file)
 !/.gitignore
-
-t10k-images-idx3-ubyte.gz
-t10k-labels-idx1-ubyte.gz
-train-images-idx3-ubyte.gz
-train-labels-idx1-ubyte.gz
-
-
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
