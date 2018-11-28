@@ -2,8 +2,7 @@
 # - https://www.digitalocean.com/community/tutorials/how-to-build-a-neural-network-to-recognize-handwritten-digits-with-tensorflow
 import tensorflow as tf
 import numpy as np 
-import PIL
-# from PIL import Image
+from PIL import Image
 
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets(".data/MNIST_data/", one_hot=True) # y labels are oh-encoded
@@ -23,7 +22,7 @@ n_output = 10                               # output layer (0-9 digits)
 # Hyperparameters remain constant
 learning_rate = 1e-4
 n_iterations = 1000
-batch_size = 128
+batch_size = 256
 dropout = 0.5
 
 # Defining 3 tensors as placeholders
@@ -84,22 +83,10 @@ for i in range(n_iterations):
 
 # Run session on MNIST test images
 test_accuracy = sess.run(accuracy, feed_dict={X: mnist.test.images, Y: mnist.test.labels, keep_prob:1.0})
-print("\nAccuracy on test set:", test_accuracy)
+print("\nAccuracy on test set:", test_accuracy * 100,"%")
 
-''' 
-# Resize the image from the non-resized folder to a 28x28 pixel image and save it to a new folder
-_nonresized_img = PIL.Image.open("numbers/non_resized/number9.png") 
-_nonresized_img = _nonresized_img.resize((28, 28), PIL.Image.ANTIALIAS)
-_nonresized_img.save("numbers/resized/resizenumber9.png") 
-
-'''
-
-# Load the test image of the handwritten digit
-# saved as a 28x28 pixel image
-_resized_img = np.invert(PIL.Image.open("numbers/resized/resizenumber5.png").convert('L')).ravel()
+img = np.invert(Image.open("numbers/resized/number4.png").convert('L')).ravel()
 
 # Feeding the image loaded for testing
-prediction = sess.run(tf.argmax(output_layer,1), feed_dict={X: [_resized_img]})
-# img_accuracy = sess.run(accuracy, feed_dict={X: _resized_img, Y: _resized_img, keep_prob:1.0})
+prediction = sess.run(tf.argmax(output_layer,1), feed_dict={X: [img]})
 print ("Prediction for test image:", np.squeeze(prediction))
-# print ("nAccuracy on handwritten image:", img_accuracy)
