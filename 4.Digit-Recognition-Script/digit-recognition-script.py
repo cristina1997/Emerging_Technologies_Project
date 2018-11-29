@@ -1,5 +1,6 @@
 # Source code adapted from:
 # - https://www.digitalocean.com/community/tutorials/how-to-build-a-neural-network-to-recognize-handwritten-digits-with-tensorflow
+# Import libraries
 import tensorflow as tf
 import numpy as np 
 from PIL import Image
@@ -22,7 +23,7 @@ n_output = 10                               # output layer (0-9 digits)
 # Hyperparameters remain constant
 learning_rate = 1e-4
 n_iterations = 1000
-batch_size = 256
+batch_size = 128
 dropout = 0.5
 
 # Defining 3 tensors as placeholders
@@ -30,7 +31,7 @@ X = tf.placeholder("float", [None, n_input])
 Y = tf.placeholder("float", [None, n_output])
 keep_prob = tf.placeholder(tf.float32) 
 
-# 
+# Improve model's learning
 weights = {
     'w1': tf.Variable(tf.truncated_normal([n_input, n_hidden1], stddev=0.1)),
     'w2': tf.Variable(tf.truncated_normal([n_hidden1, n_hidden2], stddev=0.1)),
@@ -76,17 +77,38 @@ for i in range(n_iterations):
     sess.run(train_step, feed_dict={X: batch_x, Y: batch_y, keep_prob:dropout})
 
     # print loss and accuracy (per minibatch)
-    if i%100==0:
+    if i%50==0:
         minibatch_loss, minibatch_accuracy = sess.run([cross_entropy, accuracy], feed_dict={X: batch_x, Y: batch_y, keep_prob:1.0})
         print("Iteration", str(i), "\t| Loss =", str(minibatch_loss), "\t| Accuracy =", str(minibatch_accuracy))
 
 
 # Run session on MNIST test images
 test_accuracy = sess.run(accuracy, feed_dict={X: mnist.test.images, Y: mnist.test.labels, keep_prob:1.0})
-print("\nAccuracy on test set:", test_accuracy * 100,"%")
+print("\nTest Accuracy:", test_accuracy * 100,"%")    
 
-img = np.invert(Image.open("numbers/resized/number2.png").convert('L')).ravel()
+
+# Place the file location of the images in variables
+num2 = "numbers/resized/number2.png"
+num3 = "numbers/resized/number3.png"
+num6 = "numbers/resized/number6.png"
+
+# Allow the user to choose a number to check
+print ('\nNumber 2 is checked by default if none of the below numbers are chosen')
+print ('Choose a number between 2, 3 and 6:')
+number_choice = int(input())
+
+# Convert the handwritten digit image into an image with the same representation as the MNIST dataset according to the user's input
+if number_choice == 2: 
+    img = np.invert(Image.open(num2).convert('L')).ravel()
+elif number_choice == 3:
+    img = np.invert(Image.open(num3).convert('L')).ravel()
+elif number_choice == 6:
+    img = np.invert(Image.open(num6).convert('L')).ravel()
+else:
+    number_choice = 2
+    img = np.invert(Image.open(num2).convert('L')).ravel()
 
 # Feeding the image loaded for testing
 prediction = sess.run(tf.argmax(output_layer,1), feed_dict={X: [img]})
-print ("Prediction for test image:", np.squeeze(prediction))
+print ("The number predicted should be:", number_choice)
+print ("Test Image Prediction:", np.squeeze(prediction))
