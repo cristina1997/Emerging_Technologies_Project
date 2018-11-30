@@ -1,4 +1,14 @@
 # Emerging_Technologies_Project
+***
+## Run
+First and foremost, you will need to install [Anaconda Version 3.7](https://www.anaconda.com/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (if not already installed).
+
+**1. Clone Repo**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open your terminal/cmd in the folder you wish to download the repository and execute the following
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> git clone https://github.com/cristina1997/Emerging_Technologies_Project.git```
+
 
 ## 1. [Numpy random notebook](https://github.com/cristina1997/Emerging_Technologies_Project/blob/master/1.Numpy-Random-Notebook/numpy-random-notebook.ipynb)
 
