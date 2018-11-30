@@ -17,16 +17,11 @@ Open your terminal/cmd in the project folder <br>
     1. Install libraries
     
         * First you need to go to the folder in which the script is <br>
-        * Create a text file <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> touch requirements.txt``` <br>
-        * Add the following to the text file <br>
-          image==1.5.20 <br>
-          numpy==1.14.3 <br>
-          tensorflow==1.4.0 <br>
-        * Now install the linbraries in the text file <br> 
+        * Now install the linbraries in the requirements.txt file <br> 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> pip install -r requirements.txt``` 
         
     2. Resize images
+    
         * Make sure you are in the same folder as your script <br>
         * If you're not then go to your command line and write <br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> cd 4.Digit-Recognition-Scrip``` <br>
@@ -34,6 +29,7 @@ Open your terminal/cmd in the project folder <br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> python resize-images.py``` <br>
       
     3. Run Script
+    
         * Now that everything is set up, you can finally run the script <br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> python digit-recognition-script.py```
 
