@@ -5,7 +5,7 @@ First and foremost, you will need to install [Anaconda Version 3.7](https://www.
 
 1. **Clone Repo**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Open your terminal/cmd in the folder you wish to download the repository and execute the following <br>
+* Open your terminal/cmd in the folder you wish to download the repository and execute the following <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> git clone https://github.com/cristina1997/Emerging_Technologies_Project.git```
 
 2. **Run Notebook**
