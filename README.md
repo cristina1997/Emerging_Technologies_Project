@@ -5,37 +5,37 @@ First and foremost, you will need to install [Anaconda Version 3.7](https://www.
 
 1. **Clone Repo**
 
-* Open your terminal/cmd in the folder you wish to download the repository and execute the following <br>
+Open your terminal/cmd in the folder you wish to download the repository and execute the following <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> git clone https://github.com/cristina1997/Emerging_Technologies_Project.git```
 
 2. **Run Notebook**
 
-* Open your terminal/cmd in the project folder <br>
-  * If you wish to run one of the notebook projects, once you have installed jupyter execute the following <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> jupyter notebook```
+Open your terminal/cmd in the project folder <br>
+* If you wish to run one of the notebook projects, once you have installed jupyter execute the following <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> jupyter notebook```
 
-3. **Run Python Script**
+3. **Run Python Script** 
 
-* Open your terminal/cmd in the project folder <br>
-  1. Install libraries
-    * First you need to go to the folder in which the script is <br>
-    * Create a text file <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> touch requirements.txt``` <br>
-    * Add the following to the text file <br>
-      image==1.5.20 <br>
-      numpy==1.14.3 <br>
-      tensorflow==1.4.0 <br>
-    * Now install the linbraries in the text file <br> 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> pip install -r requirements.txt``` <br>
-  2. Resize images
-    * Make sure you are in the same folder as your script <br>
-    * If you're not then go to your command line and write <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> cd 4.Digit-Recognition-Scrip``` <br>
-    * Next we need to resize ourimages <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> python resize-images.py``` <br>
-  2. Run Script <br>
-    * Now that everything is set up, you can finally run the script <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> python digit-recognition-script.py```
+Open your terminal/cmd in the project folder <br>
+ 1. Install libraries
+   * First you need to go to the folder in which the script is <br>
+   * Create a text file <br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> touch requirements.txt``` <br>
+   * Add the following to the text file <br>
+     image==1.5.20 <br>
+     numpy==1.14.3 <br>
+     tensorflow==1.4.0 <br>
+   * Now install the linbraries in the text file <br> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> pip install -r requirements.txt``` <br>
+ 2. Resize images
+   * Make sure you are in the same folder as your script <br>
+   * If you're not then go to your command line and write <br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> cd 4.Digit-Recognition-Scrip``` <br>
+   * Next we need to resize ourimages <br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> python resize-images.py``` <br>
+ 2. Run Script <br>
+   * Now that everything is set up, you can finally run the script <br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> python digit-recognition-script.py```
 
 ***
 
