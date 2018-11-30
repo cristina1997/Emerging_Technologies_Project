@@ -17,6 +17,15 @@ First and foremost, you will need to install [Anaconda Version 3.7](https://www.
 3. **Run Python Script**
 
 * Open your terminal/cmd in the project folder <br>
+* First you need to go to the folder in which the script is <br>
+* Create a text file <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> touch requirements.txt``` <br>
+* Add the following to the text file <br>
+  image==1.5.20 <br>
+  numpy==1.14.3 <br>
+  tensorflow==1.4.0 <br>
+* Now install the linbraries in the text file <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> pip install -r requirements.txt``` <br>
 * If you wish to run the Digit Recognition Script then you need to go to the folder where the script is <br>
 * In your command line write <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> cd 4.Digit-Recognition-Scrip``` <br>
