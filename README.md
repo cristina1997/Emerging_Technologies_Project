@@ -2,7 +2,7 @@
 
 ## 1. [Numpy random notebook](https://github.com/cristina1997/Emerging_Technologies_Project/blob/master/1.Numpy-Random-Notebook/numpy-random-notebook.ipynb)
 
-## 2. Iris dataset notebook](https://github.com/cristina1997/Emerging_Technologies_Project/blob/master/2.Iris-Dataset-Notebook/iris-dataset-notebook.ipynb)
+## 2. [Iris dataset notebook](https://github.com/cristina1997/Emerging_Technologies_Project/blob/master/2.Iris-Dataset-Notebook/iris-dataset-notebook.ipynb)
 
 ## 3. [MNIST dataset notebook](https://github.com/cristina1997/Emerging_Technologies_Project/blob/master/3.MNIST-Dataset-Notebook/MNIST-dataset-notebook.ipynb)
 
