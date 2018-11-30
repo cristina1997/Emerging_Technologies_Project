@@ -3,7 +3,6 @@
 
 # Ignore all . files
 .*
-_*
 
 # Dont ignore .gitignore (this file)
 !/.gitignore
