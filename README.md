@@ -31,11 +31,16 @@ First and foremost, you will need to install [Anaconda Version 3.7](https://www.
 
 ## Project Components
 ### 1. [Numpy random notebook](https://github.com/cristina1997/Emerging_Technologies_Project/blob/master/1.Numpy-Random-Notebook/numpy-random-notebook.ipynb)
+A jupyter notebook I developed that explains the overall concept of the numpy.random package with plots from the four different distributions.
 
 ### 2. [Iris dataset notebook](https://github.com/cristina1997/Emerging_Technologies_Project/blob/master/2.Iris-Dataset-Notebook/iris-dataset-notebook.ipynb)
+A jupyter notebook used to explain the iris dataset as well as the difficulty in separating the three species.
 
 ### 3. [MNIST dataset notebook](https://github.com/cristina1997/Emerging_Technologies_Project/blob/master/3.MNIST-Dataset-Notebook/MNIST-dataset-notebook.ipynb)
+A jupyter notebook explaining how to read MNIST dataset.
 
 ### 4. [Digit recognition](https://github.com/cristina1997/Emerging_Technologies_Project/tree/master/4.Digit-Recognition-Script)
+A Pythom script that takes an image of a handwritten number and uses super-vised-learning algorithm to recognise the digit.
 
 ### 5. [Digit recognition explained](https://github.com/cristina1997/Emerging_Technologies_Project/blob/master/5.Digit-Recognition-Notebook/digit-recognition-notebook.ipynb)
+A jupyter notebook explaining the Digit Recognition Script implementation.
