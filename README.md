@@ -3,19 +3,16 @@
 ## Run
 First and foremost, you will need to install [Anaconda Version 3.7](https://www.anaconda.com/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (if not already installed).
 
-1. **Clone Repo**
-
+1. **Clone Repo** <br>
 Open your terminal/cmd in the folder you wish to download the repository and execute the following <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> git clone https://github.com/cristina1997/Emerging_Technologies_Project.git```
 
-2. **Run Notebook**
-
+2. **Run Notebook** <br>
 Open your terminal/cmd in the project folder <br>
 * If you wish to run one of the notebook projects, once you have installed jupyter execute the following <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> jupyter notebook```
 
-3. **Run Python Script** 
-
+3. **Run Python Script** <br>
 Open your terminal/cmd in the project folder <br>
   * Install libraries
     * First you need to go to the folder in which the script is <br>
@@ -30,7 +27,7 @@ Open your terminal/cmd in the project folder <br>
    * Resize images
     * Make sure you are in the same folder as your script <br>
     * If you're not then go to your command line and write <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> cd 4.Digit-Recognition-Scrip``` <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> cd 4.Digit-Recognition-Scrip``` <br>
     * Next we need to resize ourimages <br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> python resize-images.py``` <br>
    * Run Script <br>
