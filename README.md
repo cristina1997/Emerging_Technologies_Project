@@ -9,8 +9,8 @@ Open your terminal/cmd in the folder you wish to download the repository and exe
 
 2. **Run Notebook** <br>
 Open your terminal/cmd in the project folder <br>
-* If you wish to run one of the notebook projects, once you have installed jupyter execute the following <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> jupyter notebook```
+    * If you wish to run one of the notebook projects, once you have installed jupyter execute the following <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> jupyter notebook```
 
 3. **Run Python Script** <br>
 Open your terminal/cmd in the project folder <br>
